@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Pagina</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Eco-Pagina</h1>
+    </header>
+    
+    <main>
+        <article>
+            <section id="Info">
+                <div>
+                   <h3>Informacion sobre el sitio</h3>
+                   <h5>Un sitio creado para recomendar practicas ecologicas <br>y juegos didacticos ecologicos, ¡Disfruta!</h5>
+                </div>
+            </section>
+           <section>
+           <h1>Productos y alternativas</h1>
+           <h3>Elementos y alternativas de otras cosas daninas para el <br>medio ambiente</h3>
+              <div class="Elementos">
+                 <div class="Carta">
+                     <h4>Bolsas <br> reutilizables</h4>
+                     <p>De tela, yute algodon</p>
+                 </div>
+                 <div class="Carta">
+                     <h4>Botellas y vasos reutilizables</h4>
+                     <p>Acero inoxidable, vidrio</p>
+                 </div>
+                     <a href="{{ url_for('Electrodos') }}">
+                 <div class="Carta">
+                     <h4>Electrodomésticos de<br> bajo consumo</h4>
+                 </div>
+                      </a>
+              </div>
+            </section>
+        </article>
+        <article>
+          <section>
+               <h1>Juego</h1>
+               <a href="https://scratch.mit.edu/projects/1054347309/">
+               <div id="Caja">
+                   <div class="Carta">Eco-Preguntas</div>
+               </div>
+               </a>
+          </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>@Copyright 2025</p>
+    </footer>
+</body>
+</html>
